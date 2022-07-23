@@ -1,0 +1,188 @@
+/* CORE STYLING */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #1c1c1c;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+}
+main {
+  display: flex;
+  align-items: center;
+  min-height: 95vh;
+}
+a{
+  color: #fff;
+}
+
+/* CONTAINER FOR THE CONTENT */
+
+.container {
+  background-color: #1f2937;
+  padding: 5rem;
+  margin: 0 auto;
+  width: 650px;
+  /* height: 650px; */
+  border-radius: 0.5rem;
+}
+
+/* HEADINGS AND CLASSES OF HEADINGS */
+
+h1 {
+  margin: 1rem 0;
+  font-size: 45px;
+  font-weight: 900;
+}
+.green-heading {
+  color: #55f991;
+}
+h4 {
+  color: #ccc;
+  margin: 0 0 1rem 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+h5{
+  text-align: center;
+  font-size: 18px;
+}
+
+/* INPUT TYPE RANGE.....  */
+
+.slide-length {
+  color: #ccc;
+  display: block;
+  margin: 1rem 0;
+}
+#slide-number {
+  color: #55f991;
+}
+#slider {
+  display: block;
+  margin: 1rem 0 3.5rem;
+}
+.slide{
+  width: 50%;
+}
+.slider-container .slider{
+  -webkit-appearance: none;
+  width: 50%;
+  height: 10px;
+  border-radius: 5px;
+  outline: none;
+}
+.slider-container .slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #55f991;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+.slider-container .slider::-webkit-slider-thumb:hover{
+  background: #10b981;
+}
+
+/* GENERATE BUTTON */
+.btn {
+  background: #10b981;
+  padding: 0.9rem 2rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  border-radius: 0.2rem;
+  font-size: 20px;
+}
+.btn:hover{
+  background: #fff;
+  color: #10b981;
+}
+
+.button-two{
+  background: #10b981;
+  padding: 1.02rem 1.5rem;
+  text-align: center;
+  color: #1f2937;
+  cursor: pointer;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 7px;
+}
+.button-two:hover{
+  background: #fff;
+  color: #10b981;
+}
+
+.second-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* USED A DIV INSTEAD OF AN HR */
+.line {
+  border: 2px solid #273549;
+  margin-bottom: 1rem;
+}
+
+
+/* SECOND CONTAINER CLASS */
+/* .second-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+/* GENERATED PASSWORD IN THE SECOND CONTAINER */
+.generated-password {
+    background: #273549;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+    color: #1f2937;
+    width: 100%;
+  }
+
+@media (max-width: 500px){
+  body{
+    background:  #1f2937;
+  }
+  .container{
+    max-width: 400px;
+    min-height: 95vh;
+  }
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .generated-password {
+    width: 100%;
+  }
+  .button-two{
+    width: 100%;
+  }
+  .second-container{
+    flex-direction: column;
+  }
+  .btn{
+    font-size: 16px;
+  }
+  h5{
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .slide{
+    width: 100%;
+  }
+  footer{
+    text-align: center;
+  }
+}

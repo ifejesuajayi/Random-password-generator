@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bed27b19a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Random password generator || Ifejesu AJ</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="first-section">
+                <h1 class="heading">Generate a <br> <span class="green-heading">random password</span></h1>
+                <h4 class="sub-heading">Never use an insecure password again.</h4>
+                <span class="slide-length">Length: <label for="slider" id="slide-number">8</label></span>
+                <div class="slide">
+                    <div class="slider-container">
+                        <input type="range" min="8" max="12" value="8" class="slider" id="slider" name="slider"></input>
+                    </div>
+                </div>
+                <button class="btn"><i class="fa fa-flash"></i> Generate passwords</button>
+            </div>
+            <div class="line"></div>
+            <div class="second-container">
+                <div class="generated-password" id="password-one"><i class="fa fa-ellipsis-h fa-2x"
+                        aria-hidden="true"></i>
+                </div>
+                <button class="button-two"><i class="fa fa-clone "></i> </button>
+                <!-- <div class="generated-password" id="password-two"><i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="generated-password" id="password-three"><i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+                </div>
+                <div class="generated-password" id="password-four"><i class="fa fa-ellipsis-h fa-2x" aria-hidden="true"></i>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h5>CODED BY: <a href="https://github.com/ifejesuajayi">IFEJESU AJAYI</a></h5>
+    </footer>
+   
+    <script src="app.js"></script>
+</body>
+
+</html>
